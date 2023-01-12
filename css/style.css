@@ -8,24 +8,26 @@ html,
 body {
   overflow-x: hidden;
   margin: 0;
-  background-color: rgb(197, 197, 197);
+  background-color:#EEEEEE;
 }
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
-body, html {
+body,
+html {
   width: 100%;
-  height:100% ;
+  height: 100%;
 }
-.container{
+.container {
   width: 100%;
-
 }
 
-* :not(
+*
+  :not(
     .header-image,
     .header,
     .footer,
@@ -35,7 +37,9 @@ body, html {
     .hello,
     .abcon,
     .login,
-    .container
+    .container,
+    .end1,
+    .abcon > div
   ) {
   position: absolute;
 }
@@ -330,23 +334,19 @@ label[for="checkbox"] {
 
 .abcon {
   display: flex;
-  margin-bottom: 12px;
+  justify-content: center;
 }
-.abcon > div {
-  position: relative;
+.end1 {
+  width: 100%;
+}
+.abcon div {
   margin: 15px 0 0 5px;
   font: 14px/18px Quicksand;
   color: #1f7a54;
 }
 
 .abcon > :nth-child(2) {
-  position: relative;
   border: 1px solid #0000001a;
-}
-
-.abcon > :nth-child(3) {
-  position: relative;
-  width: 73px;
 }
 
 .footer {
@@ -355,7 +355,8 @@ label[for="checkbox"] {
   align-items: center;
   width: auto;
   height: 40px;
-  background: #e0e1e1 0% 0% no-repeat padding-box;
+  background: #E0E0E1 0% 0% no-repeat padding-box;
+  margin-top: 3vh;
 }
 
 .footer_c {
