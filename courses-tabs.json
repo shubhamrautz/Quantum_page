@@ -1,0 +1,112 @@
+{  "coursesdata":[
+    { 
+    "expired":false,
+    "image":"/quantum_screen_assets/quantum screen assets/images/imageMask-1.svg",
+    "title":"Acceleration",
+    "favorite":true,
+    "subject":"Physics",
+    "grade":{
+        "main": 6,
+        "secondary" : 2
+    },
+    "syllabus":{
+        "units":4,
+        "lessons" :18,
+        "topics":24
+    },
+    "classes":[
+        "Mr. Frank's Class B",
+        "Mr. Frank's Class C",
+        "Mr. Frank's Class D"
+    ],
+    "students": 50,
+    "duration":"21-Jan-2020 - 21-Aug-2020",
+
+    "actions":{
+        "preview": true,
+        "manage":true,
+        "grade":true,
+        "reports":true
+    }
+    },
+
+    { 
+    "expired":false,
+    "image":"quantum_screen_assets/quantum screen assets/images/imageMask-2.svg",
+    "title":"Displacement, Velocity and Speed",
+    "favorite":true,
+    "subject":"Physics 2",
+    "grade":{
+        "main": 6,
+        "secondary" : 3
+    },
+    "syllabus":{
+        "units":2,
+        "lessons" :15,
+        "topics":20
+    },
+    "actions":{
+        "preview": true,
+        "manage":false,
+        "grade":false,
+        "reports":true
+    }
+    },
+
+    { 
+    "expired":false,
+    "image":"quantum_screen_assets/quantum screen assets/images/imageMask.svg",
+    "title":"Introduction to Biology: Micro Organisms and how they affect the other Life Systems in Enggineering ",
+    "favorite":true,
+    "subject":"Biology",
+    "grade":{
+        "main": 4,
+        "secondary" : 1
+    },
+    "syllabus":{
+        "units":5,
+        "lessons" :16,
+        "topics":22
+    },
+    "classes":[
+        "All Classes"
+    ],
+    "students": 300,
+
+    "actions":{
+        "preview": true,
+        "manage":false,
+        "grade":false,
+        "reports":true
+    }
+    },
+
+    { 
+    "expired":true,
+    "image":"quantum_screen_assets/quantum screen assets/images/imageMask-3.svg",
+    "title":"Introduction to High School Mathematics",
+    "favorite":false,
+    "subject":"Mathematics",
+    "grade":{
+        "main": 8,
+        "secondary" : 3
+    },
+
+    "classes":[
+        "Mr. Frank's Class A",
+        "Mr. Frank's Class C",
+        "Mr. Frank's Class D"
+    ],
+    "students": 44,
+    "duration":"14-Oct-2020 - 20-Oct-2020",
+
+    "actions":{
+        "preview": true,
+        "manage":true,
+        "grade":true,
+        "reports":true
+    }
+    }
+    ]
+
+}

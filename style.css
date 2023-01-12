@@ -1,0 +1,488 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url("quantum_screen_assets/quantum screen assets/Quicksand font 1/Quicksand-VariableFont_wght.ttf") format('truetype');
+}
+
+html,body{
+    overflow-x: hidden;
+    margin: 0;
+    background-color: rgb(197, 197, 197);
+}
+
+* :not(.header-image , .header ,.footer,.footer-icon,.footer_c div,.footer_c){
+    
+    position: absolute;
+}
+
+*{
+font-family: Quicksand;
+}
+
+.login{
+    margin: 50px 0 0 0;
+}
+
+.hello{
+    transform: translateX(33vw);
+}
+
+.header{
+    margin:0;
+    width: auto;
+    height: 56px;
+    opacity: 1;
+    background-color: #202a37;
+    border-bottom: 2px solid #3AC7EC;
+
+}
+
+.header-image{
+    margin: 0;
+    width: auto;
+    height: 56px;
+
+    background-color: #202a37;
+    background: transparent url('quantum_screen_assets/quantum screen assets/header pattern svg.svg') repeat 0% 0% padding-box;
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+
+.header-icon{
+    position:absolute;
+    top: 11px;
+    left: 24px;
+    width: 135px;
+    height: 36px;
+    background: url("quantum_screen_assets/quantum screen assets/icons/logo used in header.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.outline{
+    top: 0;
+    width: 488px;
+    height: 4px;
+    background: #3AC7EC;
+    border-radius: 2px 2px 0px 0px;
+    opacity: 1;
+    z-index: 1;
+    margin:0px;
+}
+
+.login{
+    --position: absolute;
+    --left: 268px;
+    --top: 108px;
+    width: 488px;
+    height: 584px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 0;
+    border-radius: 2px;
+
+}
+
+.container-login{
+   --display: flex;
+    --justify-content: center;
+}
+
+.back{
+    top: 28px;
+left: 32px;
+width: 17px;
+height: 26px;
+color: #1F7A54;
+opacity: 1;
+background-image: url("quantum_screen_assets/quantum screen assets/icons/back.svg");
+}
+
+.login-with{
+    top: 26px;
+left: 136px;
+width: 236px;
+height: 30px;
+
+text-align: center;
+font: bold 24px/28px Quicksand;
+
+color: #222222;
+
+}
+
+#district{
+    background: url("quantum_screen_assets/quantum screen assets/icons/radio-button-off.svg") left center no-repeat;
+    top: 82px;
+    left: 32px;
+    width: 24px;
+    height: 24px;
+    appearance: none;
+}
+
+#district:checked{
+    background: url("quantum_screen_assets/quantum screen assets/icons/radio-button-on.svg") left center no-repeat;
+}
+#district-label{
+    top: 86px;
+left: 62px;
+width: 53px;
+height: 20px;
+
+text-align: left;
+font: bold 16px/20px Quicksand;
+
+color: #333333;
+
+}
+
+#school{
+
+background: url("quantum_screen_assets/quantum screen assets/icons/radio-button-off.svg") left center no-repeat;
+top: 82px;
+left: 145px;
+width: 24px;
+height: 24px;
+appearance: none;
+
+}
+
+#school:checked{
+    background: url("quantum_screen_assets/quantum screen assets/icons/radio-button-on.svg") left center no-repeat;
+}
+
+
+#school-label{
+    top: 86px;
+left: 177px;
+width: 248px;
+height: 20px;
+text-align: left;
+font: bold 16px/20px Quicksand;
+letter-spacing: 0px;
+color: #333333;
+opacity: 1;
+}
+
+select[name=state]{
+top: 149px;
+left: 32px;
+width: 424px;
+height: 20px;
+border: none;
+border-bottom: 1px solid grey;
+font: bold 14px/18px Quicksand;
+background: none;
+appearance: none;
+background: url("/quantum_screen_assets/quantum screen assets/icons/arrow-down.svg") no-repeat;
+background-position: calc(100%);
+}
+
+select[name=state]:focus {
+    border-bottom:  solid 1px #1f7a54; 
+    outline: 0; 
+}
+
+label[for=state]{
+    top: 129px;
+left: 32px;
+width: 34px;
+height: 15px;
+
+text-align: left;
+font: 12px/16px Quicksand;
+color: #666666;
+
+}
+
+label[for=district-list]{
+top: 210px;
+left: 32px;
+width: 44px;
+height: 15px;
+
+text-align: left;
+font:12px/16px Quicksand;
+color: #666666;
+
+}
+
+select[name=district-list]{
+    top: 230px;
+    left: 32px;
+    width: 424px;
+    height: 20px;
+    border: none;
+border-bottom: 1px solid grey;
+font: bold 14px/18px Quicksand;
+background: none;
+appearance: none;
+background: url("/quantum_screen_assets/quantum screen assets/icons/arrow-down.svg") no-repeat;
+background-position: calc(100%);
+
+}
+
+select[name=district-list]:focus{
+    border-bottom:  solid 1px #1f7a54; 
+    outline: 0; 
+}
+
+
+#username{
+top: 311px;
+left: 32px;
+width: 423px;
+height: 25px;
+border: none;
+border-bottom: 1px solid grey;
+
+}
+#username:focus {
+    border-bottom:  solid 1px #1f7a54; 
+    outline: 0; 
+}
+
+label[for=username]{
+    top: 341px;
+left: 314px;
+width: 142px;
+height: 18px;
+
+text-align: right;
+font: 14px/18px Quicksand;
+
+color: #1F7A54;
+
+}
+
+#password{
+    top: 392px;
+    left: 32px;
+    width: 424px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid grey;
+ 
+}
+#password:focus {
+    border-bottom:  solid 1px #1f7a54; 
+    outline: 0; 
+}
+
+#password_visible{
+top: 392px;
+left: 433px;
+width: 28px;
+height: 25px;
+background: transparent url('quantum_screen_assets/quantum screen assets/icons/preview.svg') 0% 0% no-repeat padding-box;
+border: none;
+}
+
+label[for=password]{
+    top: 422px;
+    left: 314px;
+    width: 144px;
+    height: 18px;
+    text-align: right;
+    font: 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1F7A54;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+input[type=checkbox]{
+top: 464px;
+left: 32px;
+width: 24px;
+height: 24px;
+background-image: url("quantum_screen_assets/quantum screen assets/icons/checkbox-unchecked.svg");
+appearance: none;
+}
+
+input[type=checkbox]:checked{
+    background-image: url("quantum_screen_assets/quantum screen assets/icons/checkbox-checked.svg");
+ 
+}
+
+
+label[for=checkbox]{
+    top: 469px;
+left: 60px;
+width: 111px;
+height: 20px;
+text-align: left;
+font: 16px/20px Quicksand;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+
+}
+
+.button{
+    top: 520px;
+left: 136px;
+width: 216px;
+height: 40px;
+
+background: #3FD28B 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 5px #0000003D;
+opacity: 1;
+border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.abcon{
+    display: flex;
+    position: relative;
+    margin-top: 635px;
+    margin-left: 184px;
+    display: flex;
+    justify-content: center;
+}    
+.abcon div{
+
+    position: relative;
+    margin: 15px 0 0 5px;
+    font: 14px/18px Quicksand;
+    color: #1f7a54;
+}
+
+@media (max-width:780px){
+    .hello{
+        position: relative;
+    }
+    .hello > div{
+        display: flex;
+        justify-content: center;
+        margin-left: 16vw;
+    }
+
+    .abcon{
+        transform: translateX(-60px);
+    } 
+
+    
+}
+
+.abcon > :nth-child(2){
+    position: relative;
+    border: 1px solid #0000001a;
+ }
+
+ .abcon > :nth-child(3){
+    position: relative;
+    width: 73px;
+
+ }
+    
+.footer{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 40px;
+background: #E0E1E1 0% 0% no-repeat padding-box;
+margin-top: 685px;
+}
+
+
+.footer_c{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon{    
+width: 91px;
+height: 30px;
+background: transparent url('quantum_screen_assets/quantum screen assets/icons/logo used in footer.svg') 0% 0% padding-box no-repeat;
+margin-right: 16px;
+}
+
+.sep{
+top: 9px;
+width: 0px;
+height: 24px;
+border: 1px solid #0000001F;
+margin-right: 16px;
+}
+.copyright{
+    position: relative;
+    top:6px;
+width: 130px;
+height: 15px;
+text-align: left;
+font: 12px/16px Quicksand;
+
+color: #616161;
+margin-right: 8px;
+}
+
+.company{
+    position: relative;
+    top: 6px;
+width: 131px;
+height: 15px;
+
+text-align: left;
+font: 12px/16px Quicksand;
+
+color: #616161;
+
+}
+
+.end{
+    position: relative;
+top: 6px;
+width: 106px;
+height: 15px;
+text-align: left;
+font: 12px/16px Quicksand;
+
+color: #616161;
+
+}
+
+@media (max-width:480px){
+
+   .login{
+
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+   }
+
+   .outline{
+    width: 100%
+}
+
+.login-with{
+left: 83px;
+width: 236px;
+}
+
+select[name=state],select[name=district-list]{
+    width: 318px;
+}
+#username,#password{
+    width: 313px;
+}
+
+label[for=username],label[for=password]{
+    left:210px
+}
+
+.button{
+    left:80px;
+}
+.footer{
+    justify-content: flex-start;
+}
+
+}
