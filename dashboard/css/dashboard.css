@@ -1,0 +1,401 @@
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../../quantum_screen_assets/Quicksand font 1/Quicksand-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../../quantum_screen_assets/Quicksand font 1/static/Quicksand-Medium.ttf") format('truetype');
+    font-weight: 500;
+}
+
+.header{
+    margin:0;
+    width: auto;
+    height: 56px;
+    opacity: 1;
+    background-color: #202a37;
+
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: max(100vh);
+}
+.header-image{
+    margin: 0;
+    width: auto;
+    height: 56px;
+
+    background-color: #202a37;
+    background: transparent url('../../quantum_screen_assets/header_pattern_svg.svg') repeat 0% 0% padding-box;
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+.header-icon:hover{
+    cursor: pointer;
+    
+}
+
+.header-icon{
+    position:absolute;
+    top: 11px;
+    left: 24px;
+    width: 135px;
+    height: 36px;
+    background: url("../../quantum_screen_assets/icons/logo used in header.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.abcon{
+    display: flex;
+    justify-content: center;
+}    
+.abcon div{
+    margin: 15px 0 0 5px;
+    font: 14px/18px Quicksand;
+    color: #1f7a54;
+}
+
+.abcon > :nth-child(2){
+    border: 1px solid #0000001a;
+ }
+    
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    background: #E0E1E1 0% 0% no-repeat padding-box;
+    margin-top: 3vh;
+}
+    
+    
+.footer_c{
+        display: flex;
+        justify-content: center;
+}
+    
+.footer-icon{    
+    width: 91px;
+    height: 30px;
+    background: transparent url('../../quantum_screen_assets/icons/logo used in footer.svg') 0% 0% padding-box no-repeat;
+    margin-right: 16px;
+    }
+    
+.sep{
+    top: 9px;
+    width: 0px;
+    height: 24px;
+    border: 1px solid #0000001F;
+    margin-right: 16px;
+    }
+.copyright{
+        position: relative;
+        top:6px;
+    width: 130px;
+    height: 15px;
+    text-align: left;
+    font: 12px/16px Quicksand;
+    
+    color: #616161;
+    margin-right: 8px;
+    }
+    
+.company{
+        position: relative;
+        top: 6px;
+    width: 131px;
+    height: 15px;
+    
+    text-align: left;
+    font: 12px/16px Quicksand;
+    
+    color: #616161;
+    
+}
+    
+.end{
+        position: relative;
+    top: 6px;
+    width: 106px;
+    height: 15px;
+    text-align: left;
+    font: 12px/16px Quicksand;
+    
+    color: #616161;
+    
+}
+
+nav{
+    @media (max-width:724px) {
+        padding: 3px;
+    }
+    padding: 4px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav-bar ul{
+    display:flex
+}
+
+.nav-bar ul div{
+    display:flex
+}
+
+
+
+
+.nav-bar ul > div{
+
+    color: #3FD28B;
+    list-style: none;
+    font: 14px/14px Quicksand;
+    transform: translateY(-66px);
+ 
+}
+
+.nav-bar ul li:not(.profile){
+    padding: 11px 0;
+}
+
+.nav-bar ul li,button{
+    margin-right: 20px;
+}
+
+
+
+
+.tabs[value=active]{
+    color: white;
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.notifications{
+    position: relative;
+    top: 7px;
+    width: 21px;
+    height: 24px;
+    background: url("../../quantum_screen_assets/icons/alerts.svg") no-repeat;
+}
+
+.horn{
+    position: relative;
+    top: 9px;
+    width:20px;
+    height: 20px;
+    background: url("../../quantum_screen_assets/icons/announcements.svg") no-repeat;
+}
+.profile{
+    
+    position: relative;
+    width:32px;
+    height: 32px;
+    background-size: 32px;
+    background-image: url("Shubham_Raut_Photo.jpg");
+    border: 2px solid #3FD28B;
+    border-radius: 50%;
+    
+}
+
+.bubble{
+    font: 12px/16px Quicksand;
+    color: #FFFFFF;
+    display: flex;
+    width: 17px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A7FF3;
+    border-radius: 50%;
+    
+}
+
+.notifications .bubble{
+    transform: translate(12px,-20px);
+}
+.horn .bubble{
+    transform: translate(12px,-21px);
+}
+
+.profile .bubble{
+    transform: translate(22px,-6px);
+    background-color: #ffffff;
+    color: #222222;
+    font: 10px Quicksand;
+}
+
+
+
+@media (max-width:724px){
+.links li{
+    display: none;
+}
+
+}
+
+@media (min-width:725px){
+    .dropdown{
+        display: none;
+    }
+}
+
+.dropdown{
+    cursor:pointer;
+    position: relative;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background:url("../../quantum_screen_assets/icons/hamburger-menu.svg") no-repeat;
+}
+
+.navbar2{
+    display: flex;
+    margin:24px;
+    background-color: #8ddc97;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+}
+
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    flex:1;
+}
+
+
+.course-icon{
+    background-image: url("../../quantum_screen_assets/icons/courses.svg");
+    width: 30px;
+    height: 30px;
+}
+
+
+.class-icon{
+    background-image: url("../../quantum_screen_assets/icons/classes.svg");
+    width: 30px;
+    height: 30px;
+}
+
+.class4,.cou4{
+    font-weight: bold;
+    font-size: large;
+    margin-left: 18px;
+    font: bold 24px/28px Quicksand;
+}
+
+.class,.course{
+
+    margin-left: 5px;
+    font: 500 16px/20px Quicksand;
+}
+
+
+.c1[name=active]{
+    border-bottom: 4px solid #222222;
+    
+}
+
+.sort{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 24px;
+    font:12px/14px Quicksand; 
+    border-bottom: 1px solid #bebebe;
+}
+
+.sort div select{
+    appearance: none;
+    padding-right: 15px;
+    width: auto;
+    height: 24px;
+    margin-left: 1px;
+    font: 500 16px/20px Quicksand;
+    border: none;
+    background:none;
+    border-bottom: 1px solid #bebebe;
+
+    background: url("../../quantum_screen_assets/icons/arrow-down.svg") no-repeat;
+    background-position: calc(100% - 3px);
+}
+
+select[name=course-name]:focus {
+    outline: 0; 
+}
+.sort .arrow{
+    margin: 1px 10px;
+    width: 18px;
+    height: 18px;
+    background: url("../../quantum_screen_assets/icons/sort.svg") no-repeat;
+    --transform: rotate(180deg);
+}
+
+.sort .sortby{
+    transform: translateY(-10px);
+}
+
+
+
+.sort div{
+    margin: 1px;
+    display: flex;
+
+}
+.sort div:first-of-type{
+    display: flex;
+    align-items: center;
+    color: #686868;
+}
+
+.showtabs{
+    display: grid;
+    gap: 24px;
+    margin: 0;    
+}
+
+    
+@media (min-width:725px){
+    .showtabs{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 24px 
+    }
+
+
+}
+
+@media (max-width:724px){
+
+    .showtabs{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
