@@ -20,13 +20,13 @@
           <div class="back"></div>
           <div class="login-with">Log in with Quantum</div>
           <input type="radio" name="field" id="district" />
-          <label id="district-label">District</label>
+          <label for="district" id="district-label">District</label>
           <input type="radio" name="field" id="school" />
-          <label id="school-label">Independent School</label>
+          <label for="school" id="school-label">Independent School</label>
 
           <label for="state">State*</label>
-          <select list="state" name="state">
-            <datalist id="state">
+          <select list="states" name="state" id="state">
+            <datalist id="states">
               <option value="Alabama">Alabama</option>
               <option value="Andhra Pradesh">Andhra Pradesh</option>
               <option value="Andaman and Nicobar Islands">
@@ -72,8 +72,8 @@
           </select>
 
           <label for="district-list">District*</label>
-          <select list="district-list" name="district-list">
-            <datalist id="district-list">
+          <select list="districts-list" name="district-list" id="district-list">
+            <datalist id="districts-list">
               <option value="Alabama School District">
                 Alabama School District
               </option>
