@@ -11,15 +11,21 @@ body {
   background-color: rgb(197, 197, 197);
 }
 body {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+body, html {
+  width: 100%;
+  height:100% ;
+}
+.container{
+  width: 100%;
 
-*
-  :not(
+}
+
+* :not(
     .header-image,
     .header,
     .footer,
@@ -28,7 +34,8 @@ body {
     .footer_c,
     .hello,
     .abcon,
-    .login
+    .login,
+    .container
   ) {
   position: absolute;
 }
@@ -92,6 +99,7 @@ body {
   height: 584px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 2px;
+  margin: 56px 0 24px 0;
 }
 
 .back {
@@ -322,6 +330,7 @@ label[for="checkbox"] {
 
 .abcon {
   display: flex;
+  margin-bottom: 12px;
 }
 .abcon > div {
   position: relative;
